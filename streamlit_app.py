@@ -11,6 +11,13 @@ def next_page():
 def prev_page():
     st.session_state.page -= 1
 
+# Tambahkan audio yang bisa diputar manual
+audio_file = open('backsound.mp3', 'rb')  # Pastikan file audio berada di direktori yang benar
+audio_bytes = audio_file.read()
+
+# Menampilkan audio control di setiap halaman
+st.audio(audio_bytes, format='audio/mp3')
+
 # Halaman 1
 if st.session_state.page == 1:
     st.title("Halaman 1")
