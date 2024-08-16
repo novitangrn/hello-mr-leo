@@ -11,17 +11,24 @@ def next_page():
 def prev_page():
     st.session_state.page -= 1
 
-# Tambahkan audio yang bisa diputar manual
-audio_file = open('backsound.mp3', 'rb')  # Pastikan file audio berada di direktori yang benar
-audio_bytes = audio_file.read()
-
-# Menampilkan audio control di setiap halaman
-st.audio(audio_bytes, format='audio/mp3')
-
 # Halaman 1
 if st.session_state.page == 1:
     st.title("Halaman 1")
     st.write("Ini adalah konten halaman 1.")
+
+    # Tombol untuk memunculkan pop-up
+    if st.button("Tampilkan Pertanyaan"):
+        with st.expander("Question Box"):
+            st.write("Apakah Anda ingin melanjutkan?")
+            
+            col1, col2 = st.columns(2)
+            with col1:
+                if st.button("Yes"):
+                    st.success("Anda memilih Yes.")
+            with col2:
+                if st.button("No"):
+                    st.warning("Anda memilih No, tindakan tidak akan dilanjutkan.")
+
     if st.button("Next"):
         next_page()
 
@@ -29,6 +36,7 @@ if st.session_state.page == 1:
 elif st.session_state.page == 2:
     st.title("Halaman 2")
     st.write("Ini adalah konten halaman 2.")
+    
     col1, col2 = st.columns(2)
     with col1:
         if st.button("Previous"):
