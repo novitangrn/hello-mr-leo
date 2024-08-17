@@ -50,12 +50,12 @@ if st.session_state.page == 1:
                 # Pertanyaan 7
                 coolest_project = st.text_input('project terkeren yang dibuat di 21', key='coolest_project')
         
-                submit_button = st.form_submit_button(label='Submit')
+                submit_button = st.button(label='Submit')
     
-    if submit_button:
-        st.success("u did well di 21!")
-        if st.button("Next"):
-            next_page()
+                if submit_button:
+                    st.success("u did well di 21!")
+                    if st.button("Next"):
+                        next_page()
                     
 # Halaman 2
 elif st.session_state.page == 2:
