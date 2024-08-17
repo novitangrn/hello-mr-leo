@@ -30,31 +30,25 @@ if st.session_state.page == 1:
         with st.expander("survey about ur 21"):
             with st.form(key='survey_form'):
                 # Pertanyaan 1
-                st.write("rate how was ur 21")
-                rate_21 = st.slider('1-10', min_value=0, max_value=10)
+                rate_21 = st.slider('rate how was ur 21', min_value=0, max_value=10)
                 
                 # Pertanyaan 2
                 fav_memory = st.text_input('fav memory di 21', key='fav_memory')
         
                 # Pertanyaan 3
-                # st.write("worst memory di 21")
                 worst_memory = st.text_input('worst memory di 21', key='worst_memory')
         
                 # Pertanyaan 4
-                st.write("tempat terbaik yang dikunjungi di 21")
-                best_place = st.text_input('', key='best_place')
+                best_place = st.text_input('tempat terbaik yang dikunjungi di 21', key='best_place')
         
                 # Pertanyaan 5
-                st.write("makanan terenak yang dicoba di 21")
-                best_food = st.text_input('', key='best_food')
+                best_food = st.text_input('makanan terenak yang dicoba di 21', key='best_food')
         
                 # Pertanyaan 6
-                st.write("film terbagus yang ditonton di 21")
-                best_movie = st.text_input('', key='best_movie')
+                best_movie = st.text_input('film terbagus yang ditonton di 21', key='best_movie')
         
                 # Pertanyaan 7
-                st.write("project terkeren yang dibuat di 21")
-                coolest_project = st.text_input('', key='coolest_project')
+                coolest_project = st.text_input('project terkeren yang dibuat di 21', key='coolest_project')
         
                 submit_button = st.form_submit_button(label='Submit')
     
