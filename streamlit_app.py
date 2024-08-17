@@ -13,8 +13,8 @@ def prev_page():
 
 # Halaman 1
 if st.session_state.page == 1:
-    st.title("Halaman Pertama")
-    st.write("Selamat bertemu Agustus ke-22 di Bumi. Selamat ulang tahun, Difa Fadli Rahman. Selamat bertambah tua. Selamat menjadi om-om sesungguhnya. Iya, ini dibuat khusus buat ultah kamu.")
+    st.title("✨ Halaman Pertama ✨")
+    st.write("selamat bertemu Agustus ke-22 di bumi. selamat ulang tahun, Difa Fadli R. selamat bertambah tua. selamat menjadi om-om sesungguhnya. iya, ini dibuat khusus buat ultah kamu hehe jangan geli plis ak gatau harus ngucapin kek gimana lagi.")
 
     # Tombol untuk memunculkan pop-up
     if st.button("Tampilkan Pertanyaan"):
