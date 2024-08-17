@@ -1,14 +1,5 @@
 import streamlit as st
 
-# Menambahkan CSS untuk mengubah background
-page_bg_img = '''
-<style>
-body {
-    background-color: pink;
-}
-</style>
-'''
-
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
 # Inisialisasi session state untuk melacak halaman
@@ -24,8 +15,8 @@ def prev_page():
 
 # Halaman 1
 if st.session_state.page == 1:
-    st.title("Halaman 1")
-    st.write("Ini adalah konten halaman 1.")
+    st.title("Halaman Pertama")
+    st.write("Selamat bertemu Agustus ke-22 di Bumi. Selamat ulang tahun, Difa Fadli Rahman. Selamat bertambah tua. Selamat menjadi om-om sesungguhnya. Iya, ini dibuat khusus buat ultah kamu.")
 
     # Tombol untuk memunculkan pop-up
     if st.button("Tampilkan Pertanyaan"):
