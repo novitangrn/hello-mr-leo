@@ -35,11 +35,11 @@ if st.session_state.page == 1:
                 
                 # Pertanyaan 2
                 st.write("fav memory di 21")
-                fav_memory = st.text_input('', key='fav_memory')
+                fav_memory = st.text_input(key='fav_memory')
         
                 # Pertanyaan 3
-                st.write("worst memory di 21")
-                worst_memory = st.text_input('', key='worst_memory')
+                # st.write("worst memory di 21")
+                worst_memory = st.text_input('worst memory di 21', key='worst_memory')
         
                 # Pertanyaan 4
                 st.write("tempat terbaik yang dikunjungi di 21")
