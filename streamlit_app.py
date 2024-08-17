@@ -1,5 +1,16 @@
 import streamlit as st
 
+# Menambahkan CSS untuk mengubah background
+page_bg_img = '''
+<style>
+body {
+    background-color: pink;
+}
+</style>
+'''
+
+st.markdown(page_bg_img, unsafe_allow_html=True)
+
 # Inisialisasi session state untuk melacak halaman
 if 'page' not in st.session_state:
     st.session_state.page = 1
