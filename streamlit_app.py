@@ -11,6 +11,10 @@ def next_page():
 def prev_page():
     st.session_state.page -= 1
 
+# Tambahkan audio yang bisa diputar manual
+audio_file = open('backsound.mp3', 'rb')  # Pastikan file audio berada di direktori yang benar
+audio_bytes = audio_file.read()
+
 # Halaman 1
 if st.session_state.page == 1:
     st.title("✨ Halaman Pertama ✨")
@@ -19,18 +23,9 @@ if st.session_state.page == 1:
     st.write("ak dah bikin beberapa fitur, klik lezgo buat coba-coba.")
 
     # Tombol untuk memunculkan pop-up
-    if st.button("Lezgo"):
-        with st.expander("bekson dulu"):
-            
-            # backsound
+    if st.button("lezgo"):
             st.write("play duluuu biar ga sepi")
-            col1, col2 = st.columns(2)
-            with col1:
-                if st.button("ya"):
-                    st.success("yey.")
-            with col2:
-                if st.button("engga"):
-                    st.warning("aslinya ini iya cuma tulisannya engga.")
+            st.audio(audio_bytes, format='audio/mp3')
               
         with st.expander("survey about ur 21"):
             
