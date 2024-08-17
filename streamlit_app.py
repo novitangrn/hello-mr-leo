@@ -14,7 +14,9 @@ def prev_page():
 # Halaman 1
 if st.session_state.page == 1:
     st.title("✨ Halaman Pertama ✨")
-    st.write("selamat bertemu Agustus ke-22 di bumi. selamat ulang tahun, Difa Fadli R. selamat bertambah tua. selamat menjadi om-om sesungguhnya. iya, ini dibuat khusus buat ultah kamu hehe jangan geli plis ak gatau harus ngucapin kek gimana lagi.")
+    st.write("selamat bertemu Agustus ke-22 di bumi. selamat ulang tahun, Difa Fadli R. selamat bertambah tua. selamat menjadi om-om sesungguhnya.")
+    st.write("iya, ini dibuat khusus buat ultah kamu hehe jangan geli plis ak gatau harus ngucapin kek gimana lagi.")
+    st.write("ak dah bikin beberapa fitur, klik lezgo buat coba-coba.")
 
     # Tombol untuk memunculkan pop-up
     if st.button("Tampilkan Pertanyaan"):
