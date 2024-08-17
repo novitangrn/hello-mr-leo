@@ -24,10 +24,10 @@ if st.session_state.page == 1:
 
     # Tombol untuk memunculkan pop-up
     if st.button("lezgo"):
-            st.write("play duluuu biar ga sepi")
-            st.audio(audio_bytes, format='audio/mp3')
+       st.write("play duluuu biar ga sepi")
+       st.audio(audio_bytes, format='audio/mp3')
               
-        with st.expander("survey about ur 21"):
+       with st.expander("survey about ur 21"):
             
             # question 1
             st.write("rate how was ur 21")
