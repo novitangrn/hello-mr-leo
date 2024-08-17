@@ -52,11 +52,10 @@ if st.session_state.page == 1:
         
                 submit_button = st.form_submit_button(label='Submit')
     
-            # Opsional: Tombol untuk melanjutkan ke halaman berikutnya (jika menggunakan navigasi halaman)
-            if submit_button:
-                st.success("u did well di 21!")
-                if st.button("Next"):
-                    next_page()
+                if submit_button:
+                    st.success("u did well di 21!")
+                    if st.button("Next"):
+                        next_page()
                     
 # Halaman 2
 elif st.session_state.page == 2:
