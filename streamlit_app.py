@@ -14,23 +14,64 @@ def prev_page():
 # Halaman 1
 if st.session_state.page == 1:
     st.title("✨ Halaman Pertama ✨")
-    st.write("selamat bertemu Agustus ke-22 di bumi. selamat ulang tahun, Difa Fadli R. selamat bertambah tua. selamat menjadi om-om sesungguhnya.")
+    st.write("selamat bertemu 19 Agustus ke-22 di bumi. selamat ulang tahun, Difa Fadli R. selamat bertambah tua. selamat menjadi om-om sesungguhnya.")
     st.write("iya, ini dibuat khusus buat ultah kamu hehe jangan geli plis ak gatau harus ngucapin kek gimana lagi.")
     st.write("ak dah bikin beberapa fitur, klik lezgo buat coba-coba.")
 
     # Tombol untuk memunculkan pop-up
-    if st.button("Tampilkan Pertanyaan"):
-        with st.expander("Question Box"):
-            st.write("Apakah Anda ingin melanjutkan?")
+    if st.button("Lezgo"):
+        with st.expander("bekson dulu"):
             
+            # backsound
+            st.write("play duluuu biar ga sepi")
             col1, col2 = st.columns(2)
             with col1:
-                if st.button("Yes"):
-                    st.success("Anda memilih Yes.")
+                if st.button("ya"):
+                    st.success("yey.")
             with col2:
-                if st.button("No"):
-                    st.warning("Anda memilih No, tindakan tidak akan dilanjutkan.")
+                if st.button("engga"):
+                    st.warning("aslinya ini iya cuma tulisannya engga.")
+              
+            with st.expander("survey about ur 21"):
+                
+                # question 1
+                st.write("rate how was ur 21")
+                st.slider('1-10', min_value=0, max_value=10)
+    
+                # question 2
+                st.write("fav memory di 21")
+                st.text_input('jawab di sini')
+                        
+                # question 3
+                st.write("worst memory di 21")
+                st.text_input('jawab di sini')
+    
+                # question 
+                st.write("tempat terbaik yang dikunjungi di 21")
+                st.text_input('jawab di sini')
 
+                # question 
+                st.write("makanan terenak yang dicoba di 21")
+                st.text_input('jawab di sini')
+
+                # question 
+                st.write("film terbagus yang ditonton di 21")
+                st.text_input('jawab di sini')
+
+                # question 
+                st.write("project terkeren yang dibuat di 21")
+                st.text_input('jawab di sini')
+                
+                # question 
+                st.write("janji jangan pernah nyerah di 22")
+                col1, col2 = st.columns(2)
+                with col1:
+                    if st.button("ya"):
+                        st.success("yey.")
+                with col2:
+                    if st.button("engga"):
+                        st.warning("aslinya ini iya cuma tulisannya engga.") 
+                    
     if st.button("Next"):
         next_page()
 
