@@ -34,8 +34,7 @@ if st.session_state.page == 1:
                 rate_21 = st.slider('1-10', min_value=0, max_value=10)
                 
                 # Pertanyaan 2
-                st.write("fav memory di 21")
-                fav_memory = st.text_input(key='fav_memory')
+                fav_memory = st.text_input('fav memory di 21', key='fav_memory')
         
                 # Pertanyaan 3
                 # st.write("worst memory di 21")
