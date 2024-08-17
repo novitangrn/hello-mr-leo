@@ -1,7 +1,5 @@
 import streamlit as st
 
-st.markdown(page_bg_img, unsafe_allow_html=True)
-
 # Inisialisasi session state untuk melacak halaman
 if 'page' not in st.session_state:
     st.session_state.page = 1
