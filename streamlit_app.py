@@ -32,45 +32,45 @@ if st.session_state.page == 1:
                 if st.button("engga"):
                     st.warning("aslinya ini iya cuma tulisannya engga.")
               
-            with st.expander("survey about ur 21"):
-                
-                # question 1
-                st.write("rate how was ur 21")
-                st.slider('1-10', min_value=0, max_value=10)
-    
-                # question 2
-                st.write("fav memory di 21")
-                st.text_input('jawab di sini')
-                        
-                # question 3
-                st.write("worst memory di 21")
-                st.text_input('jawab di sini')
-    
-                # question 
-                st.write("tempat terbaik yang dikunjungi di 21")
-                st.text_input('jawab di sini')
+        with st.expander("survey about ur 21"):
+            
+            # question 1
+            st.write("rate how was ur 21")
+            st.slider('1-10', min_value=0, max_value=10)
 
-                # question 
-                st.write("makanan terenak yang dicoba di 21")
-                st.text_input('jawab di sini')
+            # question 2
+            st.write("fav memory di 21")
+            st.text_input('jawab di sini')
+                    
+            # question 3
+            st.write("worst memory di 21")
+            st.text_input('jawab di sini')
 
-                # question 
-                st.write("film terbagus yang ditonton di 21")
-                st.text_input('jawab di sini')
+            # question 
+            st.write("tempat terbaik yang dikunjungi di 21")
+            st.text_input('jawab di sini')
 
-                # question 
-                st.write("project terkeren yang dibuat di 21")
-                st.text_input('jawab di sini')
-                
-                # question 
-                st.write("janji jangan pernah nyerah di 22")
-                col1, col2 = st.columns(2)
-                with col1:
-                    if st.button("ya"):
-                        st.success("yey.")
-                with col2:
-                    if st.button("engga"):
-                        st.warning("aslinya ini iya cuma tulisannya engga.") 
+            # question 
+            st.write("makanan terenak yang dicoba di 21")
+            st.text_input('jawab di sini')
+
+            # question 
+            st.write("film terbagus yang ditonton di 21")
+            st.text_input('jawab di sini')
+
+            # question 
+            st.write("project terkeren yang dibuat di 21")
+            st.text_input('jawab di sini')
+            
+            # question 
+            st.write("janji jangan pernah nyerah di 22")
+            col1, col2 = st.columns(2)
+            with col1:
+                if st.button("ya"):
+                    st.success("yey.")
+            with col2:
+                if st.button("engga"):
+                    st.warning("aslinya ini iya cuma tulisannya engga.") 
                     
     if st.button("Next"):
         next_page()
