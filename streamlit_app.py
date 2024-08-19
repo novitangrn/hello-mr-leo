@@ -87,6 +87,7 @@ elif st.session_state.page == 2:
     st.write("jco identik sama resign kan ya, pol? sorry karena ngajuin ini di ultah kamu... kamu selamat ulang tahun ya.. panjang umur dan sehat selalu. all the best buat kamu.")
     st.write("aku banyak banget salah ke kamu. suka tiba-tiba bt, suka tiba-tiba ilang, suka tiba-tiba ga jelas. problematik banget, maaf udah banyak ngerepotin dan jadi beban kamu.")
     st.write("makasih banyak pol buat semuanyaaa. ak seneng bisa kenal kamu.")
+    st.write("baik-baik kamu di sanaaa.")
     
     if st.button("Back"):
         next_page()
