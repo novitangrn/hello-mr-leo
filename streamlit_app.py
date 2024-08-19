@@ -82,7 +82,7 @@ if st.session_state.page == 1:
             next_page()
 
 # Page 2
-elif st.session_state.page == 3:
+elif st.session_state.page == 2:
     st.title("whatever your choice, it's always should be 'acc'")
     st.write("jco identik sama resign kan ya, pol? sorry karena ngajuin ini di ultah kamu... kamu selamat ulang tahun ya.. panjang umur dan sehat selalu. all the best buat kamu.")
     st.write("aku banyak banget salah ke kamu. suka tiba-tiba bt, suka tiba-tiba ilang, suka tiba-tiba ga jelas. problematik banget, maaf udah banyak ngerepotin dan jadi beban kamu.")
