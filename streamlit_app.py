@@ -126,12 +126,12 @@ elif st.session_state.page == 5:
             
             st.info("yang ini beres ngetik jangan langsung klik enter ya.")
 
-            worst_memory = st.text_input('worst memory di 21', key='fav_memory')
-            fav_memory = st.text_input('fav memory di 21', key='worst_memory')
-            best_place = st.text_input('tempat terbaik yang dikunjungi di 21', key='best_place')
-            best_food = st.text_input('makanan terenak yang dicoba di 21', key='best_food')
-            best_movie = st.text_input('film terbagus yang ditonton di 21', key='best_movie')
-            coolest_project = st.text_input('project terkeren yang dibuat di 21', key='coolest_project')
+            worst_memory = st.text_area('worst memory di 21')
+            fav_memory = st.text_area('fav memory di 21')
+            best_place = st.text_area('tempat terbaik yang dikunjungi di 21')
+            best_food = st.text_area('makanan terenak yang dicoba di 21')
+            best_movie = st.text_area('film terbagus yang ditonton di 21')
+            coolest_project = st.text_area('project terkeren yang dibuat di 21')
             st.info("pertanyaan-pertanyaan di atas buat callback memorimu di 21. terusin yang baik-baik, yang jelek-jelek lupain yaaa 🙇‍♀️")
     
             submit_button = st.form_submit_button(label='udah?  ayo next.')
@@ -154,11 +154,11 @@ elif st.session_state.page == 5:
 # Page 6
 elif st.session_state.page == 6:
     st.title("yey you did well di 21, poypoy!")
-    st.write("tau ga siiii aku seneng banget ketemu dan kenal sama kamu. inget ga aku pernah bilang kalo ak sempet nge-drop komen di reels instagram tentang seseorang?")
+    st.write("tau ga siiii, ak gakan bosen bilang kalo aku seneng banget bisa kenal sama kamu. inget ga aku pernah bilang kalo ak sempet nge-drop komen di reels instagram tentang seseorang?")
     
     with st.expander("kubocorin sekarang deh..."):
         st.image("assets/img1.jpeg", caption="belum lewat yaaa wkwk" , use_column_width="auto")
-        st.write("bukti:")
+        st.write("sbg bukti deh:")
         st.image("assets/img2.jpeg", caption="bukti 1", use_column_width="auto")
         st.image("assets/img3.jpeg", caption="bukti 2", use_column_width="auto")
         st.write("jujur ini bikin malu HAHAHA😭😢 plis kamu jangan ngerasa gimana gimana yaaa ini cuma fyi sama funfact aja.")
@@ -227,7 +227,7 @@ elif st.session_state.page == 7:
 
 # Page 8
 elif st.session_state.page == 8:
-    st.title("ak juga udah ngumpulin quote of the day alias kata-kata hari ini buat jadi motivasi sewaktu-waktu.")
+    st.title("ak juga udah ngumpulin 15 quote of the day alias kata-kata hari ini buat jadi motivasi sewaktu-waktu ⏩⏩.")
     
     st.divider()
     tabs = st.tabs(
@@ -312,7 +312,7 @@ elif st.session_state.page == 10:
     
     col1, col2 = st.columns(2)
     with col1:
-        if st.button("balik ke qotd?"):
+        if st.button("balik ke wishes?"):
             prev_page()
     with col2:
         if st.button("next aja"):
@@ -323,7 +323,7 @@ elif st.session_state.page == 10:
 elif st.session_state.page == 11:
     st.title("💡 hasil dan pembahasan sejak how it started 💡")
     st.divider()
-    st.write("setelah hampir 2 bulan yang ternyata tidak eperti ekpektasi awal itu, didapatkan similarities antara ak sm kamu sebagaimana tabel berikut (sesuai janji)")
+    st.write("setelah hampir 2 bulan yang ternyata tidak seperti ekspektasi awal itu, didapatkan similarities antara ak sm kamu sebagaimana tabel berikut (sesuai janji)")
 
     st.subheader("similarities")
     sims = [
@@ -412,7 +412,6 @@ elif st.session_state.page == 11:
             try:
                 new_data = {"pasal_baru": pasal_baru}
                 save_to_mongo_text(new_data)
-                st.success("oke udah kekirim. hasil keluar setelah review pihak lain ya hehehe")
                 next_page()
             except Exception as e:
                 st.error("bjir kok error si............")
@@ -482,5 +481,4 @@ elif st.session_state.page == 12:
     st.write("")
 
     if st.button("finish🏁   kabarin kalo uda sampe akhir siniii."):
-        wa_link = "https://wa.me/083166510535"
-        st.write(f"<meta http-equiv='refresh' content='0; url={wa_link}'>", unsafe_allow_html=True)
+        st.balloons()
