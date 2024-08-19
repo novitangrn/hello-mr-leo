@@ -57,15 +57,15 @@ if st.session_state.page == 1:
 
     <p style="text-align: right;">Surabaya, 19 Agustus 2024</p>
 
-    <p>Yth. Sdr. Difa Fadli R.,</p>
+    <p>Kepada Sdr. Difa Fadli R.,</p>
 
-    <p>Saya menulis surat ini untuk memberitahukan keputusan saya untuk mengundurkan diri dari situasi apapun itu yang melibatkan saya dengan Saudara. Saya memberikan pemberitahuan ini 3 hari sebelumnya, dan hari terakhir saya akan jatuh pada Kamis, 22 Agustus 2024. Keputusan ini diambil karena alasan pribadi yang tidak bisa dihindari.</p>
+    <p>Karena judulnya proper, jadi agak formal ya. Baiklah, jadi aku nulis surat ini buat memberitahukan keputusan aku untuk mengundurkan diri dari situasi apapun itu yang melibatkan aku dengan kamu. Aku kasih pemberitahuan ini 3 hari sebelumnya, dan hari terakhir aku bakal jatuh pada Kamis, 22 Agustus 2024. Keputusan ini diambil karena alasan pribadi yang tidak bisa dihindari.</p>
 
-    <p>Saya sangat bersyukur atas pengalaman dan kesempatan yang telah diberikan. Saya ingin menyampaikan rasa terima kasih kepada Saudara atas segala cerita, insight, dan dukungan yang telah saya terima.</p>
+    <p>Aku bersyukur atas pengalaman dan kesempatan yang telah diberikan. Aku juga ingin menyampaikan rasa terima kasih ke kamu atas segala cerita, insight, dan dukungan yang telah aku terima.</p>
 
-    <p>Sekali lagi, saya mengucapkan terima kasih atas kesempatan yang tidak pernah diprediksi akan saya alami ini. Saya berharap baik saya maupun Saudara dapat sama-sama melanjutkan cerita di jalan masing-masing.</p>
+    <p>Sekali lagi, aku ucapkan terima kasih atas kesempatan yang tidak pernah diprediksi akan aku alami ini. Aku harap baik aku maupun kamu dapat sama-sama melanjutkan cerita di jalan masing-masing.</p>
 
-    <p style="margin-top: 50px;">Hormat saya,</p>
+    <p style="margin-top: 50px;">Tertanda,</p>
     <p>Novita A.</p>
     """
     st.markdown(surat, unsafe_allow_html=True)
