@@ -40,11 +40,11 @@ def save_to_mongo_cb(data):
 
 def next_page():
     st.session_state.page += 1
-    st.experimental_rerun()
+    #st.experimental_rerun()
 
 def prev_page():
     st.session_state.page -= 1
-    st.experimental_rerun()
+    #st.experimental_rerun()
 
 audio_file = open('assets/backsound.mp3', 'rb')
 
@@ -70,6 +70,9 @@ if st.session_state.page == 1:
     """
     st.markdown(surat, unsafe_allow_html=True)
     st.divider()
+    
+    st.info("always click one of these buttons twice.")
+    
     col1, col2 = st.columns(2)
     with col1:
         if st.button("Acc"):
@@ -79,14 +82,27 @@ if st.session_state.page == 1:
             next_page()
 
 # Page 2
-elif st.session_state.page == 2:
-    st.title("tapi boong yaaa😩")
+elif st.session_state.page == 3:
+    st.title("whatever your choice, it's always should be 'acc'")
+    st.write("jco identik sama resign kan ya, pol? sorry karena ngajuin ini di ultah kamu... kamu selamat ulang tahun ya.. panjang umur dan sehat selalu. all the best buat kamu.")
+    st.write("aku banyak banget salah ke kamu. suka tiba-tiba bt, suka tiba-tiba ilang, suka tiba-tiba ga jelas. problematik banget, maaf udah banyak ngerepotin dan jadi beban kamu.")
+    st.write("makasih banyak pol buat semuanyaaa. ak seneng bisa kenal kamu.")
+    
+    if st.button("Back"):
+        next_page()
+    
+# Page 3
+elif st.session_state.page == 3:
+    st.title("HAIIII! IH JUJUR INI JELEK BGT DRAMANYA BJRLAAAA😩")
+    st.write("ini boongan ya pooooyyy. enak aja resign resign HAHAHAHAA.")
     st.image("assets/img10.jpg",  use_column_width="auto")
+
+    st.info("btw disclaimer, slalu klik dua kali di tombol apapun yaw..")
     if st.button("Next"):
         next_page()
 
-# Page 3
-elif st.session_state.page == 3:
+# Page 4
+elif st.session_state.page == 4:
     st.title("✨ Halaman Pertama ✨")
     st.image("assets/img11.jpeg",  use_column_width="auto")
     st.write("selamat bertemu 19 Agustus ke-22 kamu di bumi! selamat ulang tahun, Difa Fadli. selamat bertambah tua. selamat menjadi om-om sesungguhnya.")
@@ -96,8 +112,8 @@ elif st.session_state.page == 3:
     if st.button("lezgo"):
         next_page()
 
-# Page 4
-elif st.session_state.page == 4:
+# Page 5
+elif st.session_state.page == 5:
     #st.write("play duluuu biar ga sepi")
     #st.audio(audio_file, format='audio/mp3')
 
@@ -135,8 +151,8 @@ elif st.session_state.page == 4:
                 st.session_state.form_submitted = True
                 next_page()
 
-# Page 5
-elif st.session_state.page == 5:
+# Page 6
+elif st.session_state.page == 6:
     st.title("yey you did well di 21, poypoy!")
     st.write("tau ga siiii aku seneng banget ketemu dan kenal sama kamu. inget ga aku pernah bilang kalo ak sempet nge-drop komen di reels instagram tentang seseorang?")
     
@@ -152,8 +168,8 @@ elif st.session_state.page == 5:
         if st.button("next, next!"):
             next_page()
 
-# Page 6
-elif st.session_state.page == 6:
+# Page 7
+elif st.session_state.page == 7:
     st.title("ngomong-ngomong soal funfact...")
     st.write("mr. ISTJ Leo, nih ak kumpulin sedikit funfact soal ur MBTI dan ur zodiac.")
 
@@ -209,8 +225,8 @@ elif st.session_state.page == 6:
     if st.button("next!"):
         next_page()
 
-# Page 6
-elif st.session_state.page == 7:
+# Page 8
+elif st.session_state.page == 8:
     st.title("ak juga udah ngumpulin quote of the day alias kata-kata hari ini buat jadi motivasi sewaktu-waktu.")
     
     st.divider()
@@ -236,8 +252,8 @@ elif st.session_state.page == 7:
             next_page()
 
 
-# Page 8
-elif st.session_state.page == 8:
+# Page 9
+elif st.session_state.page == 9:
     st.title("sekali lagi.. happy birthday, dipoooy! 🤍")
     st.info("skarang masuk ke section wishes ya...")
     st.markdown("versi singkatnya, **i wish you all the best, poy.**")
@@ -274,8 +290,8 @@ elif st.session_state.page == 8:
             next_page()
 
 
-# Page 9
-elif st.session_state.page == 9:
+# Page 10
+elif st.session_state.page == 10:
     st.title("arsip  arsip📂📁")
     st.write("mau throwback ngga? dulu kt knapa seru bgt bjir ak ketawa sendiri pas bikin page iniii. ni yaaa ak ingetin how it started + captionnyaaa HAHAHA")
 
@@ -303,8 +319,8 @@ elif st.session_state.page == 9:
             next_page()
 
 
-# Page 10
-elif st.session_state.page == 10:
+# Page 11
+elif st.session_state.page == 11:
     st.title("💡 hasil dan pembahasan sejak how it started 💡")
     st.divider()
     st.write("setelah hampir 2 bulan yang ternyata tidak eperti ekpektasi awal itu, didapatkan similarities antara ak sm kamu sebagaimana tabel berikut (sesuai janji)")
@@ -401,8 +417,8 @@ elif st.session_state.page == 10:
             except Exception as e:
                 st.error("bjir kok error si............")
 
-# Page 11
-elif st.session_state.page == 11:
+# Page 12
+elif st.session_state.page == 12:
     st.title("last page🎇🎆✨🎉🎊")
     st.subheader("yey sampe di halaman terakhir.")
     st.write("cape ngga? wkwk niatnya tu mau 3 page aja tapi ternyata kurang hehe. ini page trakhir bgt kok.")
