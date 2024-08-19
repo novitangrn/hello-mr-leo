@@ -162,7 +162,8 @@ elif st.session_state.page == 6:
         st.image("assets/img2.jpeg", caption="bukti 1", use_column_width="auto")
         st.image("assets/img3.jpeg", caption="bukti 2", use_column_width="auto")
         st.write("jujur ini bikin malu HAHAHA😭😢 plis kamu jangan ngerasa gimana gimana yaaa ini cuma fyi sama funfact aja.")
-        
+    
+    st.divider()    
     col1, col2 = st.columns(2)
     with col1:
         if st.button("next, next!"):
