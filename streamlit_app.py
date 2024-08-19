@@ -124,7 +124,7 @@ elif st.session_state.page == 5:
 
             rate_21 = st.slider('rate how was ur 21', min_value=0, max_value=10)
             
-            st.info("yang ini jawabnya bebasss sesuka dan se-mood kamu aja gimana.")
+            st.info("yang ini bebasss sesuka dan se-mood kamu aja gimana, ga perlu ikutin ctrl+enter ya")
 
             worst_memory = st.text_area('worst memory di 21')
             fav_memory = st.text_area('fav memory di 21')
