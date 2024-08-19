@@ -63,7 +63,7 @@ if st.session_state.page == 1:
 
     <p>Saya sangat bersyukur atas pengalaman dan kesempatan yang telah diberikan. Saya ingin menyampaikan rasa terima kasih kepada Saudara atas segala cerita, insight, dan dukungan yang telah saya terima.</p>
 
-    <p>Sekali lagi, saya mengucapkan terima kasih atas kesempatan yang tidak pernah diprediksi akan saya alami ini. Saya berharap baik saya maupun Saudara dapat sama-sama melanjutkan cerita di jalan masng-masing.</p>
+    <p>Sekali lagi, saya mengucapkan terima kasih atas kesempatan yang tidak pernah diprediksi akan saya alami ini. Saya berharap baik saya maupun Saudara dapat sama-sama melanjutkan cerita di jalan masing-masing.</p>
 
     <p style="margin-top: 50px;">Hormat saya,</p>
     <p>Novita A.</p>
@@ -97,7 +97,7 @@ elif st.session_state.page == 3:
     st.write("ini boongan ya pooooyyy. enak aja resign resign HAHAHAHAA.")
     st.image("assets/img10.jpg",  use_column_width="auto")
 
-    st.info("btw disclaimer, slalu klik dua kali di tombol apapun yaw..")
+    st.info("btw disclaimer, slalu coba klik dua kali di tombol apapun yaw..")
     if st.button("Next"):
         next_page()
 
@@ -411,6 +411,7 @@ elif st.session_state.page == 11:
         if st.button('send and next!'):
             try:
                 new_data = {"pasal_baru": pasal_baru}
+                save_to_mongo_cb(responses)
                 save_to_mongo_text(new_data)
                 next_page()
             except Exception as e:
