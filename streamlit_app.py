@@ -40,11 +40,11 @@ def save_to_mongo_cb(data):
 
 def next_page():
     st.session_state.page += 1
-    st.experimental_rerun()
+    #st.experimental_rerun()
 
 def prev_page():
     st.session_state.page -= 1
-    st.experimental_rerun()
+    #st.experimental_rerun()
 
 audio_file = open('assets/backsound.mp3', 'rb')
 
